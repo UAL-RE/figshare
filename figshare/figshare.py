@@ -4,7 +4,9 @@ from requests.exceptions import HTTPError
 import os
 from urllib.request import urlretrieve
 
-def issue_request(method, url, headers, data=None, binary=False):
+
+def issue_request(method, url, headers, data=None, binary=False,
+                  params=None):
     """Wrapper for HTTP request
 
     Parameters
@@ -24,6 +26,9 @@ def issue_request(method, url, headers, data=None, binary=False):
     binary: bool
         Whether data is binary or not
 
+    params: dict
+        Additional information for URL GET request
+
     Returns
     -------
     response_data: dict
@@ -32,7 +37,8 @@ def issue_request(method, url, headers, data=None, binary=False):
     if data is not None and not binary:
         data = json.dumps(data)
 
-    response = requests.request(method, url, headers=headers, data=data)
+    response = requests.request(method, url, headers=headers,
+                                data=data, params=params)
 
     try:
         response.raise_for_status()
