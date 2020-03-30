@@ -313,6 +313,8 @@ class Figshare:
         article_id : str or int
             Figshare article ID
 
+        directory: str
+            Path to deposit data.  Default: determines current path
         """
 
         if directory is None:
@@ -322,7 +324,7 @@ class Figshare:
         file_list = self.list_files(article_id)
 
         dir0 = os.path.join(directory, "figshare_{0}/".format(article_id))
-        os.makedirs(dir0, exist_ok=True) # This might require Python >=3.2
+        os.makedirs(dir0, exist_ok=True)  # This might require Python >=3.2
 
         for file_dict in file_list:
             urlretrieve(file_dict['download_url'], os.path.join(dir0, file_dict['name']))
