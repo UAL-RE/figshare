@@ -68,6 +68,9 @@ class Figshare:
     private : bool
         Boolean to check whether connection is to a private or public article
 
+    stage : bool
+        Boolean to use a different baseurl for Figshare stage vs production
+
     Methods
     -------
     endpoint(link)
@@ -98,8 +101,12 @@ class Figshare:
         Retrieve files and save them locally.
 
     """
-    def __init__(self, token=None, private=False):
-        self.baseurl = "https://api.figshare.com/v2"
+    def __init__(self, token=None, private=False, stage=False):
+        if not stage:
+            self.baseurl = "https://api.figshare.com/v2"
+        else:
+            self.baseurl = "https://api.figsh.com/v2"
+
         self.token = token
         self.private = private
 
