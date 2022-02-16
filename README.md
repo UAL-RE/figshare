@@ -14,6 +14,7 @@ following actions are implemented
 
 ```shell
 git clone https://github.com/cognoma/figshare.git
+cd /path/figshare-folder
 python setup.py install
 ```
 
