@@ -109,6 +109,7 @@ class Figshare:
 
         self.token = token
         self.private = private
+        self.page_size = 1000
 
     def endpoint(self, link):
         """Concatenate the endpoint to the baseurl"""
@@ -275,7 +276,8 @@ class Figshare:
             else:
                 url = self.endpoint('/articles/{}/files'.format(article_id))
             headers = self.get_headers(self.token)
-            response = issue_request('GET', url, headers=headers)
+            params = {'page_size': self.page_size}
+            response = issue_request('GET', url, headers=headers, params=params)
             return response
         else:
             request = self.get_article_details(article_id, version)
