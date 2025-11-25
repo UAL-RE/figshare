@@ -37,7 +37,7 @@ setuptools.setup(
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 3 :: Only',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.11',
     ],
 
     # What does your project relate to?
@@ -52,8 +52,8 @@ setuptools.setup(
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'requests == 2.20.0',
-        'pytest == 3.0.4',
+        'requests == 2.32.3',
+        'pytest == 8.3.5',
     ],
 
     # pytest integration
