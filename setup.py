@@ -29,8 +29,8 @@ setuptools.setup(
         'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
-        'Intended Audience :: Science/Research',
-        'Topic :: Scientific/Engineering :: Bio-Informatics',
+        'Intended Audience :: Researchers :: Public',
+        'Topic :: Research :: Data',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: BSD License',
