@@ -3,18 +3,19 @@ import setuptools
 setuptools.setup(
     name='figshare',
 
+    # This repo was original forked from cognoma (https://github.com/cognoma/figshare).
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
     version='0.3.5',
 
-    description='Figshare client for Project Cognoma',
+    description='Figshare client for Research Engagement of  University of Arizona Libraries data curation',
 
     # The project's main homepage.
-    url='https://github.com/cognoma',
+    url='https://github.com/UAL-RE',
 
     # Author details
-    author='Project Cognoma',
+    author='UAL-RE',
 
     # Choose your license
     license='BSD 3-Clause',
@@ -28,8 +29,8 @@ setuptools.setup(
         'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
-        'Intended Audience :: Science/Research',
-        'Topic :: Scientific/Engineering :: Bio-Informatics',
+        'Intended Audience :: Researchers :: Public',
+        'Topic :: Research :: Data',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: BSD License',
@@ -37,11 +38,11 @@ setuptools.setup(
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 3 :: Only',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.11',
     ],
 
     # What does your project relate to?
-    keywords='cognoma machine learning cancer figshare',
+    keywords='redata data repository figshare',
     
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
@@ -52,8 +53,8 @@ setuptools.setup(
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'requests == 2.20.0',
-        'pytest == 3.0.4',
+        'requests == 2.32.3',
+        'pytest == 8.3.5',
     ],
 
     # pytest integration

@@ -13,7 +13,7 @@ following actions are implemented
 ## Install
 
 ```shell
-git clone https://github.com/cognoma/figshare.git
+git clone https://github.com/UAL-RE/figshare.git
 cd /path/figshare-folder
 python setup.py install
 ```
