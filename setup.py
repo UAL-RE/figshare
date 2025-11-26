@@ -3,18 +3,19 @@ import setuptools
 setuptools.setup(
     name='figshare',
 
+    # This repo was original forked from cognoma (https://github.com/cognoma/figshare).
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
     version='0.3.5',
 
-    description='Figshare client for Project Cognoma',
+    description='Figshare client for Research Engagement of  University of Arizona Libraries data curation',
 
     # The project's main homepage.
-    url='https://github.com/cognoma',
+    url='https://github.com/UAL-RE',
 
     # Author details
-    author='Project Cognoma',
+    author='UAL-RE',
 
     # Choose your license
     license='BSD 3-Clause',
@@ -41,7 +42,7 @@ setuptools.setup(
     ],
 
     # What does your project relate to?
-    keywords='cognoma machine learning cancer figshare',
+    keywords='redata data repository figshare',
     
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
